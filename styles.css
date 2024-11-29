@@ -301,6 +301,7 @@ button.normal {
 
 button.normal:hover {
   transform: scale(1.02);
+  background-color: #088178;
 }
 
 #banneers {
@@ -395,38 +396,93 @@ span {
   color: #771818;
 }
 
-#footer{
+#footer {
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 75px;
   background-color: #ececec;
 }
 
-#footer p , #footer a {
+#footer p,
+#footer a {
   text-decoration: none;
   color: rgb(109, 109, 109);
 }
 
-#footer a:hover{
+#footer a:hover {
   color: #088178;
 }
 
-#footer .about a{
+#footer .about a {
   display: block;
-  padding: 8px 0 ;
+  padding: 8px 0;
 }
 
-#footer .myaccount a{
+#footer .myaccount a {
   display: block;
-  padding: 8px 0 ;
+  padding: 8px 0;
 }
 
-#footer .download img{
+#footer .download img {
   border: 1px solid #08817969;
+  border-radius: 7px;
 }
 
-#footer img{
+#footer img {
   width: auto;
   height: 60px;
-} 
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    min-height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .header-logo .header-list-icon {
+    display: flex;
+  }
+
+  .header-list-nav {
+    display: none;
+  }
+
+  #hero {
+    margin: 20px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 20px;
+    background-size: cover;
+    background-image: url(e-commerce-images/hero4.png);
+  }
+
+  #hero h4 {
+    font-size: 20px;
+  }
+
+  #hero h2 {
+    font-size: 35px;
+  }
+
+  #hero h1 {
+    font-size: 40px;
+  }
+
+  #hero p {
+    font-size: 20px;
+  }
+
+  #hero button {
+    font-size: 25px;
+  }
+}
