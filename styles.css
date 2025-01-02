@@ -436,17 +436,12 @@ span {
   height: 60px;
 }
 
-@media only screen and (max-width: 600px) {
-  .header {
-    min-height: 10vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
 
-  .header-logo .header-list-icon {
-    display: flex;
+
+
+@media screen and (max-width: 799px) {
+  .header {
+    padding: 20px 30px;
   }
 
   .header-list-nav {
@@ -454,35 +449,92 @@ span {
   }
 
   #hero {
-    margin: 20px;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
     padding: 0 20px;
-    background-size: cover;
-    background-image: url(e-commerce-images/hero4.png);
+    background-position: top 30% right 30%;
+    height: 70vh;
   }
 
   #hero h4 {
-    font-size: 20px;
+    font-size: 32px;
   }
 
   #hero h2 {
-    font-size: 35px;
+    font-size: 46px;
   }
 
   #hero h1 {
-    font-size: 40px;
+    font-size: 46px;
   }
 
-  #hero p {
-    font-size: 20px;
+  #features {
+    flex-direction: column;
   }
 
-  #hero button {
-    font-size: 25px;
+  #features .f-box {
+    margin: 15px auto;
+  }
+
+  .product-section .pro-collection {
+    margin: 0 20px;
+  }
+
+  .product-section .product-cart {
+    width: 100%;
+    max-width: 350px;
+    margin: 15px auto;
+  }
+
+  #banners .big-banners {
+    flex-direction: column;
+  }
+
+  #banners .big-banners div {
+    min-width: unset;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  #banners .small-banners {
+    flex-direction: column;
+  }
+
+  #banners .small-banners div {
+    min-width: unset;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  #footer {
+    padding: 30px;
+    flex-direction: column;
+  }
+
+  #footer > div {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+  .header {
+    padding: 20px 40px;
+  }
+
+  #hero {
+    background-position: top 25% right 25%;
+  }
+
+  .product-section .pro-collection {
+    justify-content: space-between;
+  }
+
+  .product-section .product-cart {
+    width: 45%;
+  }
+
+  #banners .big-banners div,
+  #banners .small-banners div {
+    min-width: unset;
+    width: 45%;
   }
 }
